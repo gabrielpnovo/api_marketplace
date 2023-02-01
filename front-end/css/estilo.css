@@ -1,0 +1,325 @@
+main {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+body {
+    font-family: 'Oswald', sans-serif, 'icones';
+    background-color: white;
+    color: black;
+}
+
+header {
+	background: black;
+    height: 100px;
+	padding: 20px 0;
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    margin-bottom: 1.5em;
+    z-index: 999;
+}
+
+.imagem-logo {
+    color: white;
+    width: 150px;
+    z-index: 999;
+}
+
+.cabecalho {
+    position: relative;
+    height: 100px;
+    color: white;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: #0070C0;
+	text-decoration: underline;
+}
+
+.titulo-pagina {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.8em 0;
+    clear: left;
+}
+
+.produtos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    row-gap: 8px;
+    column-gap: 16px;
+}
+
+.produtos li {
+    width: 100%;
+    height: 300px;
+    margin: 0 8px 1.5% 1.5%;
+    padding: 1em 0;
+	box-sizing: border-box;
+    border: 2px solid #000000;
+	border-radius: 10px;
+    overflow: hidden;
+}
+
+@keyframes append-animate {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.new-box {
+    animation: append-animate .3s linear;
+}
+
+.produto-nome {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 0.9rem;
+    padding: 0.5em;
+}
+
+.produto-preco {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.imagens-produtos {
+    margin: 5px 0;
+    height: 50%;
+    width: auto;
+    background-size: cover;
+}
+
+.imagens-produtos:hover {
+    transform: scale(1.8);
+    overflow: hidden;
+}
+
+.botao {
+    cursor: pointer;
+}
+
+.botao-produto {
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.botao-produto:hover {
+    font-size: 1.2rem;
+}
+
+.botoes-filtro {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.botao-filtro:hover {
+    color: white;
+    background-color: black;
+}
+
+.botao-filtro:active {
+    color: black;
+    background-color: white;
+}
+
+.botao-filtro {
+    color: black;
+    border: 2.5px solid #000;
+    border-radius: 40px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ========== FORMULÁRIOS ========== */
+fieldset {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.legenda-combobox {
+    margin-bottom: 8px;
+}
+
+.combobox-selecao-id {
+    margin-bottom: 16px;
+}
+
+select {
+    border: 1px solid black;
+}
+
+.input-padrao {
+    display: block;
+    width: 40%;
+    padding: 8px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input-padrao::placeholder {
+    opacity: 0.5;
+}
+
+.formulario-contato label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formulario-radio {
+    margin-bottom: 20px;
+}
+.formulario-radio p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.formulario-radio input {
+    margin-left: 5px;
+}
+
+.formulario-radio label {
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.botao-acao-produto {
+    background-color: #0070C0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: 0px solid #000;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ========== POPUP ========== */
+
+.popup {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 500px;
+    background-color: #357ec7;
+    z-index: 900;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+.cabecalho-popup {
+    margin-top: 3px;
+    color: lightgray;
+    font-weight: bold;
+}
+
+.fechar {
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    background-color: #ff605c;
+    height: 22px;
+    width: 22px;
+    right: 0;
+    top: 0;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 1px 7px 2px 6px;
+}
+
+.msg-popup {
+    position: relative;
+    box-sizing: border-box;
+    color: black;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 95%;
+    height: 80%;
+    margin-bottom: 10px;
+  }
+
+.texto-popup {
+    margin: 15px;
+}
+
+.ok-popup {
+    position: absolute;
+    bottom: 25px;
+    height: 30px;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.hide-popup {
+    display: none;
+}

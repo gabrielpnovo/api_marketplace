@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <title>Marketplace Virtual</title>
+
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <h1><img src="../img/logo.png" class="imagem-logo"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./criar.html">Criar</a></li>
+                        <li><a href="./atualizar.html">Atualizar</a></li>
+                        <li><a href="./deletar.html">Deletar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="popup hide-popup">
+            <p class="cabecalho-popup">Msg</p>
+            <button class="fechar">x</button>
+            <div class="msg-popup">
+                
+            </div>
+            <button class="ok-popup">Ok</button>
+        </div>
+
+        <main class="main-produto">
+            <h2 class="titulo-pagina">Delete um Produto</h2>
+            <hr>
+
+            <form class="formulario-contato">
+                <fieldset>
+                    <legend class="legenda-combobox">Qual item você deseja excluir?</legend>
+                    <select class="combobox-selecao-id">
+
+                    </select>
+                </fieldset>
+
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" class="input-padrao" required>
+
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" class="input-padrao" required>
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" class="input-padrao" required>
+                
+            </form>
+            <button class="botao-acao-produto" type="button" value="Deletar Produto">Deletar Produto</button>
+        </main>
+
+        <script src="../js/deletar.js"></script>
+    </body>
+</html>
